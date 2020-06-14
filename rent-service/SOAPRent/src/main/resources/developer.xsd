@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.hex.com/hex/developer"
+           targetNamespace="http://www.hex.com/hex/developer" elementFormDefault="qualified">
+
+    <xs:element name="getAllDevelopersRequest">
+        <xs:complexType>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getAllTechnologiesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="developer" type="tns:developer" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="developer">
+        <xs:sequence>
+            <xs:element name="developerName" type="xs:string"/>
+            <xs:element name="developerSurname" type="xs:string"/>
+            <xs:element name="technology" type="tns:technology"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="technology">
+        <xs:sequence>
+            <xs:element name="technologyName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

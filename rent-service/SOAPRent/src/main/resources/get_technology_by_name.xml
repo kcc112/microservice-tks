@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://www.hex.com/hex/technology">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:getTechnologyRequest>
+            <us:technologyName>Ruby On Rails</us:technologyName>
+        </us:getTechnologyRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

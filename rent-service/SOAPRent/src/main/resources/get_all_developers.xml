@@ -1,0 +1,7 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://www.hex.com/hex/developer">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:getAllDevelopersRequest/>
+    </soapenv:Body>
+</soapenv:Envelope>
