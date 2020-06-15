@@ -15,12 +15,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 public class SecurityTokenConfig extends WebSecurityConfigurerAdapter {
 
-	private JwtConfig jwtConfig;
-
 	@Autowired
-	public SecurityTokenConfig(JwtConfig jwtConfig) {
-		this.jwtConfig = jwtConfig;
-	}
+	private JwtConfig jwtConfig;
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {

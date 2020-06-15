@@ -7,7 +7,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.UUID;
 
-@JsonIgnoreProperties("password")
+//@JsonIgnoreProperties("password")
 public class User {
 
     @NotBlank(message = "Email is mandatory")
@@ -24,7 +24,7 @@ public class User {
     @Pattern(regexp = "[A-Z][a-z]*", message = "Invalid surname")
     private String userSurname;
 
-    @NotBlank(message = "Password is mandatory")
+//    @NotBlank(message = "Password is mandatory")
     private String password;
 
     private String userType;
